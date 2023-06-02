@@ -81,13 +81,13 @@ public class Cart {
         System.out.println("1. 확인  |  2. 취소");
         System.out.println();
         System.out.print("주문 : ");
-        String input = sc.nextLine().trim();
+        int input = sc.nextInt();
 
-        if (input.equals("1")) {
+        if (input == 1) {
             if (orderList.isEmpty()) {
                 System.out.println("장바구니가 비어있습니다.");
                 System.out.println();
-            } else {
+            } else if (input == 2) {
                 orderList.clear();
                 System.out.println("진행하던 주문이 취소되었습니다.");
                 System.out.println();
